@@ -33,9 +33,9 @@ public class IlCaroTest {
     wd.findElement(By.id("password")).sendKeys("Rfrnec7_*");
     wd.findElement(By.xpath("//button[@type='submit']")).click();
     Thread.sleep(5000);
-    if(wd.findElement(By.xpath("//h1[normalize-space()='Logged in']")).getText().equals("Logged in")){
-      System.out.println("test passed");
-    }
+//    if(wd.findElement(By.xpath("//h1[normalize-space()='Logged in']")).getText().equals("Logged in")){
+//      System.out.println("test passed");
+//    }
     if(wd.findElement(By.xpath("//h1[normalize-space()='Logged in']")).isDisplayed()){
       System.out.println("test passed");
     }

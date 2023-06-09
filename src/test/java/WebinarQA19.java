@@ -30,10 +30,10 @@ public class WebinarQA19 {
         wd.findElement(By.cssSelector("#password")).sendKeys("secret_sauce");
         wd.findElement(By.name("login-button")).click();
         System.out.println(wd.findElements(By.className("inventory_item")).size());
-        List<WebElement>list = wd.findElements(By.cssSelector(".inventory_item_desc"));
+        List<WebElement>list = wd.findElements(By.cssSelector(".inventory_item"));
         System.out.println(list.get(3).getText());
         for(WebElement el:list){
-            el.getText();
+            System.out.println(el.getText());
         }
     }
 }
